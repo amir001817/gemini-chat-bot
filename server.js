@@ -13,7 +13,7 @@ app.post('/chat', async (req, res) => {
         const { message, systemInstruction } = req.body;
         
         const model = genAI.getGenerativeModel({ 
-            model: "gemini-1.5-flash",
+            model: "gemini-3.6-flash",
             systemInstruction: systemInstruction || "تو یک دستیار هوشمند هستی."
         });
 
